@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       "في سما، نسعى لتحقيق أحلامك وطموحاتك من خلال تقديم أفضل الحلول والخدمات المخصصة لنجاحك.",
     url: "https://www.yourwebsite.com",
     type: "website",
-    locale: "ar_EG",
+    locale: "ar_SA",
     images: [
       {
         url: "/logo/logo.svg",
