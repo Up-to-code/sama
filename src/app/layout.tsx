@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     locale: "ar_EG",
     images: [
       {
-        url: "/images/logo.png",
+        url: "/logo/logo.svg",
         width: 1200,
         height: 630,
         alt: "سما | نجاحك هو هدفنا",
