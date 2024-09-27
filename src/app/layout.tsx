@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "في سما، نجاحك ليس مجرد هدف، بل هو حلم نعمل على تحقيقه. انضم إلينا لتحقيق طموحاتك وأحلامك مع أفضل الخدمات والدعم المتكامل.",
   keywords:
-    "سما, نجاح, تحقيق الأحلام, دعم الأعمال, خدمات متكاملة, نجاحك هو هدفنا",
+    "سما, نجاح, تحقيق الأحلام, دعم الأعمال, خدمات متكاملة, نجاحك هو هدفنا, استشارات الأعمال, حلول أعمال, دعم ريادة الأعمال",
   openGraph: {
     title: "سما | نجاحك هو هدفنا",
     description:
@@ -23,6 +23,14 @@ export const metadata: Metadata = {
     url: "https://www.yourwebsite.com",
     type: "website",
     locale: "ar_EG",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "سما | نجاحك هو هدفنا",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -31,7 +39,14 @@ export const metadata: Metadata = {
       "في سما، نعمل لتحقيق أحلامك وطموحاتك. اكتشف خدماتنا المتميزة الآن.",
     site: "@sama",
   },
-
+  icons: {
+    icon: "/favicon.ico",
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
   robots: "index, follow",
 };
 
@@ -41,19 +56,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-       <ClerkProviderClient>
-   <html lang="ar" dir="rtl">
-      <body className={` antialiased ${mada.className}`}>
-        <NavBar />
-        {children}
-        <Footer companyName="سما" links={[
-          { label: "الرائيسية", url: "/" },
-          { label: "الخدمات", url: "/services" },
-          { label: "عنا", url: "/about" },
-          { label: "اتصل بنا", url: "/contact" },
-        ]} />
-      </body>
-    </html>
+    <ClerkProviderClient>
+      <html lang="ar" dir="rtl">
+        <body className={` antialiased ${mada.className}`}>
+          <NavBar />
+          {children}
+          <Footer
+            companyName="سما"
+            links={[
+              { label: "الرائيسية", url: "/" },
+              { label: "الخدمات", url: "/services" },
+              { label: "عنا", url: "/about" },
+              { label: "اتصل بنا", url: "/contact" },
+            ]}
+          />
+        </body>
+      </html>
     </ClerkProviderClient>
   );
 }
