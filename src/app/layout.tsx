@@ -39,9 +39,7 @@ export const metadata: Metadata = {
       "في سما، نعمل لتحقيق أحلامك وطموحاتك. اكتشف خدماتنا المتميزة الآن.",
     site: "@sama",
   },
-  icons: {
-    icon: "/favicon.ico",
-  },
+ 
   viewport: {
     width: "device-width",
     initialScale: 1,
