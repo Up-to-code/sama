@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div className=" h-[80vh]  flex justify-between items-center">
       <div className="flex flex-col gap-4 px-4 max-w-[500px]">
-        <div>
+        <div className="flex items-center gap-2">
           <Image src="/logo/logo.svg" alt="hero" width={150} height={100} />
         </div>
         <Title className="text-3xl font-semibold my-3 max-w-96">
@@ -19,8 +19,8 @@ function Hero() {
           </Button>
         </div>
       </div>
-      <div className="  ">
-        <Image src="/assets/Hero.png" alt="hero" width={400} height={500} />
+      <div className="   hidden md:block">
+        <Image src="/assets/hero.png" alt="hero" width={400} height={500} />
       </div>
     </div>
   );
