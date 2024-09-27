@@ -20,7 +20,7 @@ function Hero() {
         </div>
       </div>
       <div className="   hidden md:block">
-        <Image src="/assets/hero.png" alt="hero" width={400} height={500} />
+        <Image src="/assets/Hero.png" alt="hero" width={400} height={500} />
       </div>
     </div>
   );
